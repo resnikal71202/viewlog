@@ -153,7 +153,8 @@ char find_action(struct colum *arr, int time, int ignore, int task, int lengh_ar
 
     for (int col = max_action_per_tick; col > 0;col--){
         printf("\t");
-        for (int time = 0; time < max_time_ticks; time++){
+        for (int time = 0; time <= max_time_ticks; time++)
+        {
             if (action_per_tick[time] >= col)
             {
                 printf("%c", find_action(arr, time, col, task, lengh_arr));
