@@ -194,7 +194,7 @@ int print_viewlog(struct colum *arr)
         // }
         i++;
     }
-    lengh_arr = i - 1;
+    lengh_arr = i;
     // printf("%d\n", max_actions_per_task[0]);
     int n = max_time_ticks;
     
