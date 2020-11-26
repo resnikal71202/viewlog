@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include <String.h>
 
-#define MAX 1000
-
 struct colum
 {
     int task;
@@ -275,6 +273,8 @@ int main(void)
         return EXIT_FAILURE;
     }
     print_viewlog(&dyca);
+
     free_dyca(&dyca);
+    
     return EXIT_SUCCESS;
 }
